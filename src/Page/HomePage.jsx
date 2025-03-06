@@ -5,6 +5,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { MdDashboardCustomize } from "react-icons/md";
 import { FaPlugCircleXmark } from "react-icons/fa6";
 import Custom from '../components/Homepage/Custom';
+import CollageProject from '../components/Homepage/CollageProject';
 
 const HomePage = () => {
   return (
@@ -34,6 +35,7 @@ const HomePage = () => {
                 </div>
             </div>
             <Custom/>
+            <CollageProject/>
         </div>
     </div>
   )
