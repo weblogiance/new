@@ -6,6 +6,7 @@ import { MdDashboardCustomize } from "react-icons/md";
 import { FaPlugCircleXmark } from "react-icons/fa6";
 import Custom from '../components/Homepage/Custom';
 import CollageProject from '../components/Homepage/CollageProject';
+import Buttonsection from '../components/Homepage/Buttonsection';
 
 const HomePage = () => {
   return (
@@ -36,6 +37,7 @@ const HomePage = () => {
             </div>
             <Custom/>
             <CollageProject/>
+            <Buttonsection/>
         </div>
     </div>
   )

@@ -5,6 +5,7 @@ import './App.css'
 
 import Ecomm from './components/Navbar/Ecomm';
 import HomePage from './Page/HomePage';
+import Footer from './components/Navbar/Footer';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
             <Route path='/' element={<HomePage/>} />
         </Routes>
+        <Footer/>
       </div>
    
   )

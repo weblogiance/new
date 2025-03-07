@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 const Ecomm = () => {
     const navpro = ["Home", "Products", "New In", "Contact Us", "About Us"]
     return (
-        <div className='w-full font-serif  bg-black  sticky top-0 text-white py-5 overflow-hidden '>
+        <div className='w-full font-serif  bg-purple-900 z-[999]  sticky top-0 text-white py-5 overflow-hidden '>
             <nav className=' w-11/12 flex mx-auto items-center  justify-between  '>
                 <div className=' w-1/10'>
                     Logo
@@ -16,7 +16,7 @@ const Ecomm = () => {
                         {
                             navpro.map((item, index) => (
                                 <li key={index} className=' relative group'>
-                                    <p className='border px-5 py-0.5  bg-white rounded-sm    transition-all duration-200 ease-in-out hover:bg-black hover:text-white text-black border-gray-500 cursor-pointer'>{item}</p>
+                                    <p className=' px-5 py-0.5  bg-white rounded-sm    transition-all duration-200 ease-in-out hover:bg-purple-950 hover:text-white text-black border-gray-500 cursor-pointer'>{item}</p>
                                     <div className=''>
 
                                     </div>
