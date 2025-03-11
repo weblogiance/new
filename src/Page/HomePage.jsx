@@ -7,6 +7,7 @@ import { FaPlugCircleXmark } from "react-icons/fa6";
 import Custom from '../components/Homepage/Custom';
 import CollageProject from '../components/Homepage/CollageProject';
 import Buttonsection from '../components/Homepage/Buttonsection';
+import Carthome from '../components/Homepage/Carthome';
 
 const HomePage = () => {
   return (
@@ -38,6 +39,7 @@ const HomePage = () => {
             <Custom/>
             <CollageProject/>
             <Buttonsection/>
+            <Carthome/>
         </div>
     </div>
   )
