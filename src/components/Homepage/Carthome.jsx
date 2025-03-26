@@ -36,16 +36,25 @@ const Carthome = () => {
             </div>
             <div className='grid grid-cols-3 gap-x-10'>
                 {
-                    demo.map((demos) => (
-                        <div className='flex flex-col items-start gap-y-3 border p-2'>
-                            <div className=' w-[510px] h-[340px] overflow-hidden border'>
-                                <img src="https://img.freepik.com/free-photo/green-iguana-closeup-wood-animal-closeup-reptile-closeup_488145-2581.jpg?t=st=1741579693~exp=1741583293~hmac=98e9008b3a5fd7d201b03d2c0586bee132a12e2c5a72d29dd8728b2c11069d12&w=1060" alt="" />
+                    demo.map((demos,index) => (
+                        <div className={`flex flex-col items-start gap-y-3 ${index === 2 && "border h-0 hover:h-full transition-all duration-700 ease-linear border-s-0 border-b-0 border-r-0 bg-gradient-to-t from-gray-800 to-black p-4 border-yellow-50 cursor-pointer"} 
+                        
+                        ${index === 1 && " border mx-auto p-5 rounded-md"}
+                        p-2`} key={index}>
+                            <div className={`w-[510px] h-[340px] rounded-md overflow-hidden`}>
+                                <img src="https://img.freepik.com/free-photo/green-iguana-closeup-wood-animal-closeup-reptile-closeup_488145-2581.jpg?t=st=1741579693~exp=1741583293~hmac=98e9008b3a5fd7d201b03d2c0586bee132a12e2c5a72d29dd8728b2c11069d12&w=1060" alt="" className=' hover:scale-110 transition-all duration-200 ease-in' />
+
                             </div>
-                            <h1>Title of Year's</h1>
+                            <h1>Title of Year's</h1>    
                             <p className=' max-w-lg text-start'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, mollitia. Numquam, mollitia maiores hic reiciendis quas nam molestiae facere perspiciatis illum! Aut?</p>
                            
-                            <div className='flex gap-x-2 text-2xl'>
-                                <span><AiFillLike/></span><span></span><BiSolidDownload/><span><RiShareFill/></span>
+                            <div className='flex justify-between w-11/12 items-center '>
+                                <div className='flex gap-x-2 text-2xl cursor-pointer'>
+                                    <span><AiFillLike/></span>
+                                    <span><BiSolidDownload/></span>
+                                    <span><RiShareFill/></span>
+                                </div>
+                                <button className={` ${index !==0 && "hidden"} bg-red-500 p-2 rounded-sm tracking-wider hover:opacity-85 cursor-pointer`} type="button">View history</button>
                             </div>
                         </div>
                     ))

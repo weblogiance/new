@@ -8,6 +8,7 @@ import Custom from '../components/Homepage/Custom';
 import CollageProject from '../components/Homepage/CollageProject';
 import Buttonsection from '../components/Homepage/Buttonsection';
 import Carthome from '../components/Homepage/Carthome';
+import Backendsite from '../components/Homepage/Backendsite';
 
 const HomePage = () => {
   return (
@@ -40,6 +41,7 @@ const HomePage = () => {
             <CollageProject/>
             <Buttonsection/>
             <Carthome/>
+            <Backendsite/>
         </div>
     </div>
   )
